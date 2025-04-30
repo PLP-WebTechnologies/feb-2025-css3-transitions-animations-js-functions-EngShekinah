@@ -1,0 +1,32 @@
+/* style.css */
+
+/* Button Animation */
+#myButton {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#myButton:hover {
+    background-color: #367C39;
+}
+
+/* Image Animation */
+#myImage {
+    width: 200px;
+    transition: transform 0.5s ease;
+}
+
+#myImage.animate {
+    transform: rotate(360deg);
+}
+
+/* Keyframe Animation Example */
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+    100% { transform: scale(1); }
+}
